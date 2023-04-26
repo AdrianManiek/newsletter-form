@@ -1,0 +1,82 @@
+*{
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+body{
+    background: rgba(0, 0, 0, 0);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(linux.JPG);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    font-family: sans-serif;
+    color: white;
+    min-height: 100vh;
+    padding: 150px 0;
+    box-sizing: border-box;
+}
+
+.newsletter{
+    background: #444f62;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 330px;
+    padding: 70px 40px;
+    border-radius: 10%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.newsletter hr{
+    width: 70px;
+    height: 3px;
+   margin: 30px auto;
+    border: 0;
+    background: rgba(255,255,255,0.5);
+}
+.newsletter p{
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox, .btn{
+    border: none;
+    outline: none;
+}
+
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+}
+
+.email-box.email-box:hover > .tbox, .tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+
+.btn{
+    background:#2f3542;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
